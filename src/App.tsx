@@ -6,8 +6,9 @@ function App() {
 
   return (
     <> 
-      <h1>Vite + React</h1>
-      <TestComponent />
+      <h3>Componente funcional</h3>
+      <TestComponent name="Júlia"/>
+      <h3>Class component</h3>
       <ClassComponent name="Lopes" />
     </>
   )
