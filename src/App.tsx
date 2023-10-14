@@ -1,5 +1,5 @@
 import './App.css'
-import ClassComponent from './components/ClassComponent/ClassComponent'
+// import ClassComponent from './components/ClassComponent/ClassComponent'
 import TestComponent from './components/TestComponent'
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <> 
       <h3>Componente funcional</h3>
       <TestComponent name="Júlia"/>
-      <h3>Class component</h3>
-      <ClassComponent name="Lopes" />
+      {/* <h3>Class component</h3> */}
+      {/* <ClassComponent name="Lopes" /> */}
     </>
   )
 }
