@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 import Button from "./assets/shared/Button";
 import Container from "./assets/shared/Container";
+import Input from "./assets/shared/Input";
 import Header from "./components/Header";
 
 function TestComponent() {
@@ -14,6 +16,7 @@ function TestComponent() {
 }
 
 function App() {
+  const [street, setStreet] = useState("");
   return (
     <div className="App">
       <Header title="AlgaStock" />
@@ -24,6 +27,12 @@ function App() {
         >
           Alert
         </Button>
+        <Input
+          label="Street"
+          placeholder="eg.: 15th Avenue"
+          value={street}
+          onChange={e => setStreet(e.target.value)}
+        />
       </Container>
     </div>
   );
